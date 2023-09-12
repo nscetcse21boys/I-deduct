@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap");
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    align-items: center;
+    background: linear-gradient(to right, #f0f0f0, #dbdbdb);
+color: #000000;
+border-radius: 5px 5px 5px 5px;
+border-style: none;
+    color: rgba(0, 0, 0, 0.8);
+    display: grid;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 100vh;
+    justify-items: center;
+    weight: 100vw;
+  }
+  
+  .page {
+    display: grid;
+    grid-template-areas: "left right";
+    max-width: 900px;
+  }
+  
+  .left-container {
+border-radius:90px 0px 0px 0px;
+    overflow: hidden;
+    padding: 0 0 0 0;
+    position: relative;
+    width: 300px;
+  }
+  .left-container .pic {
+    margin: 0;
+    width: 500px                                    ;
+    height: 100%;
+  }
+  .left-container .pic:before {
+    background: #c7ffc2;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+  .left-container img {
+    filter: sepia(100%);
+    width: 70%;
+  }
+  
+  .right-container {
+	border-radius:0px 0px 90px 0px;
+  background: linear-gradient(to right, rgb(157, 252, 93), rgb(25, 224, 45));
+    display: grid;
+    grid-template-areas: "." ".";
+    width: 700px;
+    padding: 20px 40px 0px 50px;
+  }
+  .right-container h1:nth-of-type(1) {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .right-container label{
+    font-weight: bold;
+  }
+  .right-container input,select{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 1vh;
+    border-radius: 4px;
+    /* height: 35px; */
+    line-height: 35px;
+    padding-left: 5px;
+  }
+  .set1,.set2,.set3,.set4,.set5{
+    height: 8vh;
+    position: relative;
+    margin-top: 4vh;
+    width: 100%;
+  } 
+  .cp select{
+    width: 180px;
+    height: 35px;
+  } 
+  .sex{
+    position: absolute;
+    top: 0;
+    right: 14vw;
+  }
+  input[type=radio]{
+    margin-top: 3vh;
+  }
+  .bp{
+    position: absolute;
+    top:0;
+    right: 10vw;
+  }
+  .bs{
+    position: absolute;
+    top:0;
+    right: 7.5vw;
+  }
+  .rate{
+    position: absolute;
+    top:0;
+    right: 9vw;
+  }
+   .btn{
+    margin-top: 5vh;
+  }
+  
+  .btn button{
+    background-color: rgb(104, 104, 104);
+    color: white;
+    border-radius: 5px;
+    margin-left: 18vw;
+    margin-top: -20px;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  

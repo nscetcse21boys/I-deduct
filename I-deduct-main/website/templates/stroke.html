@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block title %}Calculation{% endblock %}
+{% block content %} 
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="../static/css/stroke.css">
+
+
+<div class="modal-wrap">
+  <div class="modal-header"><span class="is-active"></span><span></span><span></span></div>
+  <div class="modal-bodies">
+    <div class="modal-body modal-body-step-1 is-showing">
+      <div class="title">Stroke</div>
+      <form action="#" method="post">
+        <label for="gender">Enter your Sex:</label>
+        <input type="radio" value="1" name="gender">Male
+        <input type="radio" value="0" name="gender" >Female
+        <label for="age">Enter Your Age</label>
+        <input type="number" id="age" name="age" min="5" max="120">
+        <label for="hypertension">Are you deal with hypertension</label>
+        <input type="radio" id="hypertension" name="hypertension" value="1">Yes 
+        <input type="radio" id="hypertension" name="hypertension" value="0">No
+        <div class="text-center">
+          <div class="button">Next</div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-body modal-body-step-2">
+      <div class="title">Stroke</div>
+      <form>
+        <label for="ever_married">Enter are you Ever Married</label>
+        <input type="radio" id="ever_married" name="ever_married" value="1">Yes 
+        <input type="radio" id="ever_married" name="ever_married" value="0">No
+        <label for="work_type">Enter Your Work Type:</label>
+        <select name="work_type" id="work_type">
+            <option value="."></option>
+            <option value="0">Government Job</option>
+            <option value="1">Private</option>
+            <option value="2">Self-employed</option>
+            <option value="3">children</option>
+        </select>
+        <label for="Residence_type">Enter your Resicence Type</label>
+        <input type="radio" id="Residence_type" name="Residence_type" value="1">Urban
+        <input type="radio" id="Residence_type" name="Residence_type" value="0">Rural
+        <div class="text-center">
+          <div class="button">Next</div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-body modal-body-step-3">
+      <div class="title">Stroke</div>
+      <form>
+        <label for="avg_glucose_level">Enter The average Glucose level:</label>
+        <input type="float" id="avg_glucose_level" name="avg_glucose_level" >
+
+        <label for="bmi">Enter Your Body Mass Index:</label>
+        <input type="float" id="bmi" name="bmi">
+
+        <label for="smoking_status">Enter Your smoking Status</label>
+    <select name="smoking_status" id="smoking_status">
+        <option value="0">formerly smoked</option>
+        <option value="1">never smoked</option>
+        <option value="2">smokes</option>
+        <option value="3">Unknown</option>
+    </select>
+        <div class="text-center">
+          <button class="button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src="../static/js/stroke.js"></script>
+
+{% endblock %} 

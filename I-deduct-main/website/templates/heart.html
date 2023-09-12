@@ -1,0 +1,81 @@
+
+{% extends "base.html" %}
+{% block title %}Calculation{% endblock %}
+{% block content %} 
+<link rel="stylesheet" href="../static/css/heart.css">
+<div class="page">
+    <div class='left-container'>
+        <div class='pic'>
+          <img src="../static/img/doctor-pic.jpg">
+        </div>
+      </div>
+    <div class="right-container">
+        <h1>heart Prediction</h1>
+            <form action="#" method="post">
+                <div class="set">
+                <div class="set1">
+                    <div class="age">
+                        <label for="age">Enter Your Age:</label><br>
+                        <input type="number" id="Age" name =age placeholder="Your age"> 
+                    </div>
+                    <div class="sex">
+                        <label for="sex">Enter your Sex:</label><br>
+                        <input type="radio" value="1" id="sex" name="sex"><span style="margin-left: 4px;">Male</span>
+                        <input type="radio" value="0" id="sex" name="sex" ><span style="margin-left: 4px;">Female</span>
+                    </div>
+                </div>
+                <div class="set2">
+                    <div class="cp">
+                        <label for="cp">Enter Your chest pain Type:</label><br>
+                        <select name="cp" id="cp">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <div class="bp">
+                        <label for="trestbps">Enter Your Resting</label><br>
+                        <input type="number" id="trestbps" name="trestbps" placeholder="Sample"> 
+                    </div>
+                </div>
+                <div class="set3">
+                    <div class="bmi">
+                        <label for="chol">Enter the cholestoral </label><br>
+                        <input type="number" id="chol" name="chol" placeholder="sample"> 
+                    </div>
+                    <div class="bs">
+                        <label for="fbs">Enter the fasting blood sugar</label><br>
+                        <input type="radio" id="fbs" value="1" name="fbs"><span style="margin-left: 4px;">True</span>
+                        <input type="radio" id="fbs" value="0" name="fbs"><span style="margin-left: 4px;">False</span>
+                    </div>
+                </div>
+                <div class="set4">
+                    <div class="elec">
+                        <label for="restecg">Enter the resting elec</label><br>
+                        <input type="radio" id="restecg" value="1" name="restecg"><span style="margin-left: 4px;">True</span>
+                        <input type="radio" id="restecg" value="0" name="restecg"><span style="margin-left: 4px;">False</span> 
+                    </div>
+                    <div class="rate">
+                        <label for="thalach">Enter the maximum heart </label><br>
+                        <input type="number" id="thalach" name="thalach" placeholder="sample"> 
+                    </div>
+                </div>
+                <div class="set5">
+                    <div class="peak">
+                        <label for="oldpeak">Enter the Previous peak:</label>
+                    <input type="float" id="oldpeak" name="oldpeak" placeholder="sample"> <br>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button>Submit</button>
+            </div> 
+
+
+</form>
+</div>
+</div>
+
+
+ {% endblock %} 

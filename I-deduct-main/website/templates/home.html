@@ -1,0 +1,107 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<link rel="stylesheet" href="../static/css/style.css">
+<!--header-->
+<div class="head"></div>
+</div>
+
+<div class="head-t">
+  <h1>I-DETECT</h1>
+  <p>"Here, you can easily check your body condition by entering your problems in the text field. You can also chat with us to clarify your doubts by consulting with our experts. If you want to assess your body condition, simply click the button below."</p>
+  <div class="btn">
+  <button>Explore</button>
+  </div>
+</div>
+<!--pic & text-->
+<div id="det">
+<div class="details">
+  <img src="../static/img/heart_disease.jpg">
+  <div class="text">
+    <h1>Heart Disease Prediction</h1>
+    <p>Heart disease, also known as cardiovascular disease (CVD), encompasses a range of conditions that affect the heart and blood vessels. These conditions can have a significant impact on the heart's ability to function properly. Heart disease is a leading cause of death worldwide, and it comes in various forms.</p>
+  </div>
+</div>
+<div class="details1">
+  <img src="../static/img/lung_cancer.jpg">
+  <div class="text1">
+    <h1>predicting Lung Cancer</h1>
+    <p>Lung cancer is a type of cancer that begins in the lungs. It is one of the most common and deadliest forms of cancer worldwide. Lung cancer can be broadly categorized into two main types: non-small cell lung cancer (NSCLC) and small cell lung cancer (SCLC), each with distinct characteristics, treatments, and prognosis.</p>
+  </div>
+</div>
+<div class="details2">
+  <img src="../static/img/brain_disease_stroke.jpg">
+  <div class="text2">
+    <h1>Predicting Stroke</h1>
+    <p>A "stroke," in the medical context, refers to a sudden and often serious medical condition that occurs when there is a disruption in the blood supply to a part of the brain. This interruption in blood flow can lead to damage or death of brain cells within minutes. Strokes are also sometimes called "cerebrovascular accidents" (CVAs) because they are related to the blood vessels in the brain.</p>
+  </div>
+</div>
+</div>
+<button id="button1"><span id="sm1">Show more</span></button>
+<!--card-->
+
+<div id="card">
+  <!--row 1-->
+    <div class="box" style="--clr: #009688">
+      <div class="img-box">
+        <img src="../static/img/brain_disease_stroke.jpg">
+      </div>
+      <div class="content"><h2>sample heading </h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium recusandae? Minus a sapiente ipsum minima.</p>
+      </div>
+    </div>
+    <div class="box" style="--clr: #009688">
+      <div class="img-box">
+        <img src="../static/img/lung_cancer.jpg">
+      </div>
+      <div class="content"><h2>sample heading </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium recusandae? Minus a sapiente ipsum minima.</p>
+      </div>
+    </div>
+    <div class="box" style="--clr: #009688">
+      <div class="img-box">
+        <img src="../static/img/lung_cancer.jpg">
+      </div>
+      <div class="content"><h2>sample heading </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium recusandae? Minus a sapiente ipsum minima.</p>
+      </div>
+    </div>
+    <!--row2-->
+    <div class="box" style="--clr: #009688">
+      <div class="img-box">
+        <img src="../static/img/heart_disease.jpg">
+      </div>
+      <div class="content"><h2>sample heading </h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium recusandae? Minus a sapiente ipsum minima.</p>
+      </div>
+    </div>
+    <div class="box" style="--clr: #009688">
+      <div class="img-box">
+        <img src="../static/img/brain_disease_stroke.jpg">
+      </div>
+      <div class="content"><h2>sample heading </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium recusandae? Minus a sapiente ipsum minima.</p>
+      </div>
+    </div>
+    <div class="box" style="--clr: #009688">
+      <div class="img-box">
+        <img src="../static/img/hiv.jpg">
+      </div>
+      <div class="content"><h2>sample heading </h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, accusantium recusandae? Minus a sapiente ipsum minima.</p>
+      </div>
+    </div>
+</div>
+<button id="button"><span id="sm">Show more</span></button>
+
+<!--quotes-->
+
+<div class="quotes">
+  <img src="../static/img/sushruta.jpg">
+  <div class="greenbg"></div>
+  <div class="qt">
+    <h1>Theory without practice is like a one-winged bird that is incapable of flight</h1>
+    <p>- Sushruta Samhita</p>
+    </div>
+</div>
+
+{% endblock %}
